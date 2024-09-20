@@ -19,15 +19,15 @@ body {
 
 /* Header Styles */
 header {
-  background-color: transparent; /* Membuat latar belakang transparan */
+  background-color: transparent;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white; /* Warna teks putih untuk kontras */
-  position: absolute; /* Agar header menyatu dengan landing section */
-  width: 100%; /* Memastikan header memenuhi lebar layar */
-  z-index: 10; /* Pastikan header tetap di atas elemen lainnya */
+  color: white;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
 }
 
 header .logo-container {
@@ -46,7 +46,7 @@ header h1 {
 }
 
 nav a {
-  color: white; /* Warna teks tetap putih */
+  color: white;
   text-decoration: none;
   margin-left: 20px;
   font-size: 16px;
@@ -64,8 +64,8 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   padding: 50px;
-  min-height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Ensure no content overflows */
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .background-video {
@@ -74,12 +74,12 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the video covers the entire section */
-  z-index: -1; /* Sends video to the back */
+  object-fit: cover;
+  z-index: -1;
 }
 
 .content {
-  z-index: 2; /* Ensures content stays on top of the video */
+  z-index: 2;
   max-width: 600px;
   padding: 20px;
   border-radius: 10px;
@@ -88,7 +88,7 @@ nav a:hover {
 }
 
 .content h2 {
-  font-size: 48px;
+  font-size: 72px;
   margin-bottom: 20px;
 }
 
@@ -113,8 +113,7 @@ nav a:hover {
   padding: 15px 30px;
   border-radius: 8px;
   text-decoration: none;
-  transition: transform 0.3s ease, background-color 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .buttons .btn-alt {
@@ -133,106 +132,145 @@ nav a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.asset-globe {
-  display: none; /* Hide the globe image element, since it's now a background */
+.tagline {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  z-index: 2;
 }
 
-/* Combined SYPENTEST and About Section Styles */
+/* About Section Styles */
 .Syspentest-sec {
-  background-color: #e3f2fd;
+  background-color: #CAF0F8;
   color: #11153b;
   text-align: center;
   padding: 50px 20px;
+  position: relative; /* For positioning assets */
 }
 
-.Syspentest-sec h2 {
-  font-size: 32px;
+.rectangle-container {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00172c;
+  border-radius: 10px;
   margin-bottom: 20px;
+}
+
+.rectangle-container h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.Syspentest-sec .content2 {
+  margin-top: 20px;
 }
 
 .Syspentest-sec p {
   font-size: 18px;
   max-width: 800px;
   margin: 0 auto 20px;
+  color: #11153b;
+}
+
+.top-right-asset {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+}
+
+.bottom-left-asset {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 100px;
 }
 
 /* Why Choose Us Section */
 .why-choose-us-section {
-  background-color: #f2f5ff;
-  text-align: center;
-  padding: 50px 20px;
+  background-color: #fff;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.why-choose-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1000px;
+  gap: 50px;
 }
 
 .why-choose-us-section h3 {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  color: #11153b;
+  line-height: 1.2;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.ellipse {
+  background-color: #0077b6;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.line {
+  width: 2px;
+  height: 100px;
+  background-color: #efefef;
+  position: absolute;
+  top: 24px;
+  left: 11px;
+}
+
+.feature:last-child .line {
+  display: none;
+}
+
+.description {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.description h4 {
+  font-size: 20px;
+  font-weight: bold;
   color: #11153b;
 }
 
-.why-choose-us-section .features {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.why-choose-us-section .feature {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  flex: 1;
-}
-
-.why-choose-us-section .feature p {
+.description p {
   font-size: 16px;
+  color: #11153b;
 }
 
-.bullet {
-  color: #00b4d8;
-  font-size: 24px;
-  margin-right: 10px;
+.feature:nth-child(2) .line {
+  height: 90px; /* Adjust line height between features */
 }
 
-/* Footer Styles */
-footer {
-  background-color: #11153b;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
+.feature:nth-child(3) .line {
+  height: 80px; /* Adjust line height for the last feature */
 }
-
-footer .footer-content p {
-  margin: 5px 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .landing-section {
-    background-position: top; /* Adjust background position for smaller screens */
-  }
-
-  .content {
-    max-width: 100%;
-    padding: 20px;
-  }
-
-  header {
-    flex-direction: column;
-  }
-
-  nav a {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  .why-choose-us-section .features {
-    flex-direction: column;
-  }
-}
-
 /* Registration Section */
 .register-section {
   background-color: #f2f5ff;
@@ -499,4 +537,81 @@ footer .footer-content p {
 
 .create-account a:hover {
   text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #0a1128; /* Dark blue background */
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* Space between logo and info */
+  flex-wrap: wrap; /* Make responsive */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+.footer-logo-img {
+  width: 100px;
+}
+
+.footer-info {
+  text-align: left;
+}
+
+.footer-info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.footer-info p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #ffffffb3; /* Slight transparency for subtext */
+}
+
+.footer-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-info ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-info ul li img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.footer-info ul li a {
+  color: #00b4d8;
+  text-decoration: none;
+}
+
+.footer-info ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-info ul li p {
+  color: #ffffff;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ffffffb3; /* Lighter text for copyright */
 }

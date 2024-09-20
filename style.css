@@ -232,3 +232,271 @@ footer .footer-content p {
     flex-direction: column;
   }
 }
+
+/* Registration Section */
+.register-section {
+  background-color: #f2f5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+.form-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #11153b;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container input:focus {
+  outline: none;
+  border-color: #00b4d8;
+}
+
+.form-container span {
+  color: red;
+  margin-left: 5px;
+}
+
+.captcha-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.captcha-code {
+  background-color: #ddd;
+  padding: 10px;
+  margin-right: 10px;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.terms-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.terms-container input {
+  margin-right: 10px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons .return-btn,
+.form-buttons .submit-btn {
+  background-color: #00b4d8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-buttons .return-btn:hover,
+.form-buttons .submit-btn:hover {
+  background-color: #007f9d;
+}
+
+/* Video background */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-background .background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the whole screen */
+}
+
+/* Register form container */
+.register-form-container {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Semi-transparent background for readability */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 100px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form-container label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.register-form-container input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-form-container button {
+  padding: 10px;
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-form-container button:hover {
+  background-color: #0077b6;
+}
+
+/* Video background */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-background .background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the whole screen */
+}
+
+/* Login form container */
+.login-form-container {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 100px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.login-form-container p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.login-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-container label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.login-form-container input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.remember-me-forgot-password {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.remember-me-forgot-password a {
+  color: red;
+  text-decoration: none;
+}
+
+.remember-me-forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.login-form-container button {
+  padding: 10px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form-container button:hover {
+  background-color: #001f4d;
+}
+
+.create-account {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.create-account a {
+  color: red;
+  text-decoration: none;
+}
+
+.create-account a:hover {
+  text-decoration: underline;
+}

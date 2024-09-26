@@ -1,0 +1,171 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+header {
+  background-color: #0e1e3a;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.user-info {
+  font-size: 18px;
+  background-color: #1f3b5e;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+/* About Section */
+.about {
+  background-color: white;
+  padding: 50px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* System Architecture Section */
+.architecture {
+  background-color: #e9f6ff;
+  padding: 60px 20px;
+  margin: 40px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+}
+
+.architecture h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.architecture-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.architecture img {
+  max-width: 45%;
+  height: auto;
+}
+
+.architecture p {
+  max-width: 45%;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Roles Section (Attacker, Defender, Sandbox) */
+.roles {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.roles h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.role-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.role-item {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.role-item img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.role-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.role-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Footer Section */
+footer {
+  background-color: #0e1e3a;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer address p {
+  margin: 5px 0;
+}

@@ -70,16 +70,16 @@ nav a:hover {
 .about {
   background-color: white;
   padding: 50px;
-  text-align: center;
-  margin: 40px auto;
-  max-width: 1200px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin: auto
+  position: relative;
+
 }
 
 .about h1 {
   font-size: 32px;
   margin-bottom: 20px;
+  color:#0e1e3a;
 }
 
 .about p {
@@ -90,20 +90,19 @@ nav a:hover {
 /* System Architecture Section */
 .architecture {
   background-color: #e9f6ff;
-  padding: 60px 20px;
-  margin: 40px auto;
-  max-width: 1200px;
+  padding: 50px;
+  margin: auto
   border-radius: 10px;
 }
 
 .architecture h2 {
   font-size: 28px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .architecture-content {
-  display: flex;
+  display: contents;
   justify-content: space-between;
   align-items: center;
 }
@@ -111,12 +110,14 @@ nav a:hover {
 .architecture img {
   max-width: 45%;
   height: auto;
+  
 }
 
 .architecture p {
   max-width: 45%;
   font-size: 16px;
   color: #666;
+  text-align: left;
 }
 
 /* Roles Section (Attacker, Defender, Sandbox) */

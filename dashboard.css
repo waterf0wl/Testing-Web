@@ -39,6 +39,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 30px;
+  margin-right: 500px;
 }
 
 nav a {
@@ -52,10 +53,17 @@ nav a:hover {
 }
 
 .user-info {
-  font-size: 18px;
+  font-size: 15px;
   background-color: #1f3b5e;
   padding: 10px 20px;
   border-radius: 20px;
+  display: flex;
+}
+
+.user-info img {
+  height: 23px;
+  margin-right: 10px;
+  display: flex;
 }
 
 /* About Section */

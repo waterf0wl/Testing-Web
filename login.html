@@ -17,7 +17,7 @@
     <div class="login-form-container">
       <h2>LOGIN</h2>
       <p>Welcome Back!</p>
-      <form>
+      <form onsubmit="login(); return false;">
         <label for="email">Email/Username*</label>
         <input type="text" id="email" name="email" required />
 
@@ -31,17 +31,29 @@
           </label>
           <a href="#">Forgot Password?</a>
         </div>
-
-        <label for="captcha">Captcha*</label>
-        <input type="text" id="captcha" name="captcha" required />
-
         <button type="submit">Login</button>
 
         <p class="create-account">
           Do not have an account yet?
-          <a href="#">Create your account here.</a>
+          <a href="register.html">Create your account here.</a>
         </p>
       </form>
     </div>
+
+    <script>
+      function login() {
+        // Simulasi proses login berhasil
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        // Validasi sederhana
+        if (email === "test@example.com" && password === "password123") {
+          // Pengalihan ke halaman dashboard
+          window.location.href = "dashboard.html";
+        } else {
+          alert("Email atau password salah, coba lagi!");
+        }
+      }
+    </script>
   </body>
 </html>

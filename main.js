@@ -12,9 +12,9 @@ function showForm(formType) {
   }
 }
 
-function showDashboard() {
-  document.getElementById("auth-section").style.display = "none";
-  document.getElementById("dashboard-section").style.display = "block";
+function login() {
+  // Simulasi proses login, jika berhasil:
+  window.location.href = "dashboard.html"; // Redirect ke halaman dashboard.html
 }
 
 function logout() {

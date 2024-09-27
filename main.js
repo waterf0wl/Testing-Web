@@ -25,3 +25,17 @@ function logout() {
 document.addEventListener("DOMContentLoaded", () => {
   showForm("login"); // Show login form by default
 });
+
+function login() {
+  // Simulasi proses login berhasil
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  // Validasi sederhana
+  if (email === "test@example.com" && password === "password123") {
+    // Pengalihan ke halaman dashboard
+    window.location.href = "dashboard.html";
+  } else {
+    alert("Email atau password salah, coba lagi!");
+  }
+}

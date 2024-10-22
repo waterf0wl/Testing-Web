@@ -1,5 +1,3 @@
-// Gabungan main.js dan script.js
-
 // Fungsi untuk menampilkan form login atau signup
 function showForm(formType) {
   if (formType === "login") {
@@ -15,18 +13,10 @@ function showForm(formType) {
   }
 }
 
-// Fungsi login dengan validasi sederhana
+// Fungsi login yang mengarahkan langsung ke dashboard
 function login() {
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-
-  // Validasi sederhana
-  if (email === "test@example.com" && password === "password123") {
-    // Pengalihan ke halaman dashboard
-    window.location.href = "dashboard.html";
-  } else {
-    alert("Email atau password salah, coba lagi!");
-  }
+  // Alihkan ke halaman dashboard tanpa validasi
+  window.location.href = "dashboard.html";
 }
 
 // Fungsi logout yang mengarahkan ke login.html
@@ -41,7 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Toggle dropdown visibility on user-info click
 document.getElementById("user-info").addEventListener("click", function () {
-  this.classList.toggle("active"); // Toggle active class to show/hide the dropdown
+  const dropdown = document.getElementById("dropdown-menu");
+  dropdown.classList.toggle("hidden"); // Toggle hidden class to show/hide the dropdown
 });
 
 // Optional: Close the dropdown if clicked outside
@@ -50,7 +41,7 @@ window.addEventListener("click", function (event) {
   const dropdown = document.getElementById("dropdown-menu");
 
   if (!userInfo.contains(event.target)) {
-    userInfo.classList.remove("active"); // Hide dropdown if clicked outside
+    dropdown.classList.add("hidden"); // Hide dropdown if clicked outside
   }
 });
 

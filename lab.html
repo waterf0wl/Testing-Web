@@ -4,41 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SYPENTEST</title>
-    <link rel="stylesheet" href="lab.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="container">
+  <body class="h-screen flex">
+    <div class="container flex w-full">
       <!-- Section 1: Sidebar -->
-      <div class="sidebar">
-        <h3>Information Gathering</h3>
-        <ul>
-          <li onclick="showContent('dvwa')">DVWA</li>
-          <li onclick="showContent('mutillidae')">MUTILLIDAE</li>
+      <div class="w-1/5 bg-blue-100 p-6">
+        <h3 class="text-xl text-blue-800 mb-4 font-semibold">
+          Information Gathering
+        </h3>
+        <ul class="space-y-2">
+          <li
+            class="cursor-pointer text-blue-800 hover:underline"
+            onclick="showContent('dvwa')"
+          >
+            DVWA
+          </li>
+          <li
+            class="cursor-pointer text-blue-800 hover:underline"
+            onclick="showContent('mutillidae')"
+          >
+            MUTILLIDAE
+          </li>
+        </ul>
       </div>
 
       <!-- Section 2: Main Content -->
-      <div class="main-content">
+      <div class="w-4/5 p-6">
         <div id="content-dvwa" class="content-section">
-          <h2>DVWA</h2>
+          <h2 class="text-2xl text-blue-800 font-bold mb-4">DVWA</h2>
           <iframe
             src=""
             width="100%"
             height="600px"
-            style="border: none"
+            class="border-none"
           ></iframe>
         </div>
-        <div id="content-mutillidae" class="content-section">
-          <h2>MUTILLIDAE</h2>
+        <div id="content-mutillidae" class="content-section hidden">
+          <h2 class="text-2xl text-blue-800 font-bold mb-4">MUTILLIDAE</h2>
           <iframe
             src=""
             width="100%"
             height="600px"
-            style="border: none"
+            class="border-none"
           ></iframe>
         </div>
       </div>
     </div>
 
-    <script src="main.js"></script>
+    <script>
+      function showContent(id) {
+        document.querySelectorAll(".content-section").forEach((section) => {
+          section.classList.add("hidden");
+        });
+        document.getElementById("content-" + id).classList.remove("hidden");
+      }
+    </script>
   </body>
 </html>
